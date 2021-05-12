@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import Freezeframe from './FreezeframeLite';
-import useLazyLoading from 'effects/use-lazy-loading';
 
 const FreezeframeWrapper = (props) => {
   const imgRef = React.useRef();
@@ -10,18 +9,14 @@ const FreezeframeWrapper = (props) => {
   // eslint-disable-next-line
   const { src, className, children } = props;
 
-  const srcLoaded = useLazyLoading(imgRef);
-
   useEffect(() => {
-    if (srcLoaded) {
-      freezeframe.current = new Freezeframe(imgRef.current);
-    }
-  }, [srcLoaded]);
+    freezeframe.current = new Freezeframe(imgRef.current);
+  }, []);
 
   return (
     <div className={classnames(className, 'freezeframe-wrapper')}>
       <>
-        <img ref={imgRef} data-src={src} className="freezeframe-img" />
+        <img ref={imgRef} src={src} className="freezeframe-img" />
         {children}
       </>
     </div>
