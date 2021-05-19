@@ -1891,5 +1891,6 @@
   "Latest": "Latest",
   "Channel Not Found": "Channel Not Found",
   "Probably because you didn't make it.": "Probably because you didn't make it.",
+  "%SITE_NAME% login image": "%SITE_NAME% login image",    
   "--end--": "--end--"
 }
