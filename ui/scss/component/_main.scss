@@ -241,6 +241,10 @@
   }
 }
 
+.main__buy-or-swap {
+  @extend .main__auth-content;
+}
+
 .main--buy {
   @extend .main--auth-page;
   max-width: 30rem;

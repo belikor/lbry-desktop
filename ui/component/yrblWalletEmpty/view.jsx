@@ -39,7 +39,12 @@ export default function YrblHelp(props: Props) {
         actions={
           <div className="section__actions">
             <Button button="primary" icon={ICONS.REWARDS} label={__('Earn Rewards')} navigate={`/$/${PAGES.REWARDS}`} />
-            <Button button="secondary" icon={ICONS.BUY} label={'Buy Credits'} navigate={`/$/${PAGES.BUY}`} />
+            <Button
+              button="secondary"
+              icon={ICONS.BUY}
+              label={'Buy/Swap Credits'}
+              navigate={`/$/${PAGES.BUY_OR_SWAP}`}
+            />
             {includeWalletLink && (
               <Button
                 icon={ICONS.RECEIVE}

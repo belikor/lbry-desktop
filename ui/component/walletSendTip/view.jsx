@@ -149,7 +149,12 @@ function WalletSendTip(props: Props) {
                 label={__('Earn Rewards')}
                 navigate={`/$/${PAGES.REWARDS}`}
               />
-              <Button icon={ICONS.BUY} button="secondary" label={__('Buy Credits')} navigate={`/$/${PAGES.BUY}`} />
+              <Button
+                icon={ICONS.BUY}
+                button="secondary"
+                label={__('Buy/Swap Credits')}
+                navigate={`/$/${PAGES.BUY_OR_SWAP}`}
+              />
               <Button button="link" label={__('Nevermind')} onClick={closeModal} />
             </div>
           }
@@ -255,8 +260,8 @@ function WalletSendTip(props: Props) {
                       button="secondary"
                       className="button-toggle-group-action"
                       icon={ICONS.BUY}
-                      title={__('Buy more LBRY Credits')}
-                      navigate={`/$/${PAGES.BUY}`}
+                      title={__('Buy or swap more LBRY Credits')}
+                      navigate={`/$/${PAGES.BUY_OR_SWAP}`}
                     />
                   )}
                 </div>

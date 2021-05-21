@@ -48,6 +48,7 @@ import CheckoutPage from 'page/checkoutPage';
 import ChannelNew from 'page/channelNew';
 import RepostNew from 'page/repost';
 import BuyPage from 'page/buy';
+import BuyOrSwapPage from 'page/buyOrSwap/view';
 import ReceivePage from 'page/receive';
 import SendPage from 'page/send';
 import SwapPage from 'page/swap';
@@ -288,6 +289,7 @@ function AppRouter(props: Props) {
       <PrivateRoute {...props} path={`/$/${PAGES.LIVESTREAM}`} component={LiveStreamSetupPage} />
       <PrivateRoute {...props} path={`/$/${PAGES.LIVESTREAM_CURRENT}`} component={LivestreamCurrentPage} />
       <PrivateRoute {...props} path={`/$/${PAGES.BUY}`} component={BuyPage} />
+      <PrivateRoute {...props} path={`/$/${PAGES.BUY_OR_SWAP}`} component={BuyOrSwapPage} />
       <PrivateRoute {...props} path={`/$/${PAGES.RECEIVE}`} component={ReceivePage} />
       <PrivateRoute {...props} path={`/$/${PAGES.SEND}`} component={SendPage} />
       <PrivateRoute {...props} path={`/$/${PAGES.SWAP}`} component={SwapPage} />

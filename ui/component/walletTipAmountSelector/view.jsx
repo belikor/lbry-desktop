@@ -84,8 +84,8 @@ function WalletTipAmountSelector(props: Props) {
             button="secondary"
             className="button-toggle-group-action"
             icon={ICONS.BUY}
-            title={__('Buy more LBRY Credits')}
-            navigate={`/$/${PAGES.BUY}`}
+            title={__('Buy or swap more LBRY Credits')}
+            navigate={`/$/${PAGES.BUY_OR_SWAP}`}
           />
         )}
       </div>

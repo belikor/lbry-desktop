@@ -58,6 +58,7 @@ exports.CREATOR_DASHBOARD = 'dashboard';
 exports.CHECKOUT = 'checkout';
 exports.CODE_2257 = '2257';
 exports.BUY = 'buy';
+exports.BUY_OR_SWAP = 'buy_or_swap';
 exports.RECEIVE = 'receive';
 exports.SEND = 'send';
 exports.SWAP = 'swap';
